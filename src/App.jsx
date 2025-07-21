@@ -13,7 +13,6 @@ function App() {
 
   const locomotiveScroll = new LocomotiveScroll();
 
-  locomotiveScroll // only for not getting any type of error
 
   return (
     <div className="w-full min-h-screen    bg-zinc-900 text-white">
