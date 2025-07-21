@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 function LandingPage() {
@@ -9,7 +10,12 @@ function LandingPage() {
             <div className="masker " key={index}>
               <div className="w-fit flex items-center">
                 {index === 1 && (
-                  <div className="w-[7vw] h-[5vw] rounded-md bg-red-500"></div>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "7vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1}}
+                    className="w-[7vw] h-[5vw] rounded-md bg-red-500"
+                  ></motion.div>
                 )}
                 <h1 className="font-['Founders_Grotesk'] text-[7vw] uppercase leading-[6vw] tracking-tighter font-medium">
                   {item}
